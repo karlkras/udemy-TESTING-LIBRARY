@@ -41,7 +41,8 @@ test("checkbox enables and disables confirm order button", async () => {
   // and checking again will set it back to disabled.
   await userEventService.click(tandcCheckBoxElem);
   expect(confirmButtonElem).toBeDisabled();
-})
+});
+
 
 test("popover responds to hover state", async () => {
   // get the label to the checkbox.
@@ -63,5 +64,4 @@ test("popover responds to hover state", async () => {
   // popover disappears when we mouse out of checkbox label
   await userEventService.unhover(termsAndConditions);
   expect(popover).not.toBeInTheDocument();
-
 });

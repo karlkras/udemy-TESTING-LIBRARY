@@ -25,11 +25,11 @@ const ConfirmOnStateButton = ({isChecked, setCheck, buttonDisable, checkboxLabel
 }
 
 ConfirmOnStateButton.propTypes = {
-  isChecked: PropTypes.bool,
-  setCheck: PropTypes.func,
-  buttonDisable: PropTypes.bool,
-  checkboxLabel: PropTypes.object,
-  submitButtonText: PropTypes.string
+  isChecked: PropTypes.bool.isRequired,
+  setCheck: PropTypes.func.isRequired,
+  buttonDisable: PropTypes.bool.isRequired,
+  checkboxLabel: PropTypes.object.isRequired,
+  submitButtonText: PropTypes.string.isRequired
 }
 
 export default ConfirmOnStateButton;

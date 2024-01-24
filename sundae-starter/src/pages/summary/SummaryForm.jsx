@@ -35,7 +35,7 @@ const SummaryForm = () => {
   return (
     <>
       <Form onSubmit={submit}>
-        <ConfirmOnStateButton value={agreeTandC}
+        <ConfirmOnStateButton isChecked={agreeTandC}
                               buttonDisable={!agreeTandC}
                               setCheck={setTandC}
                               submitButtonText="Confirm order"
